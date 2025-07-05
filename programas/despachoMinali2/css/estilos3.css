@@ -1,0 +1,346 @@
+@import  url( 'https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap' );
+ 
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/*Inicio de estilos menu*/
+.ContenedorPrincipal{
+    
+     display: flex; /* Activa Flexbox */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center; 
+}
+.encabezadoMenu{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;left: 0;
+    background-color: #1c1c1c;
+    opacity: 0.7;
+}
+
+
+nav{
+    width: 100%;
+    height: auto;
+   
+ }
+ nav p{
+     color: #fff;
+     font-weight: 400;
+    font-size: 22px;
+    float: left;
+    margin-top: 10px;
+ }
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+   
+}
+nav ul li{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    color: #fff;
+    
+   margin-bottom: 200px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+    padding: 7px 13px;
+}
+nav ul li a:hover{
+    
+  color: #fff;
+}
+.menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+
+
+/*Tamaño del logo menu*/
+
+.logoIMG{
+    width: 75px;
+    height: 60px;
+    position:relative;
+    float: left;
+}
+/* inicio del boton menu lateral*/
+#btn-menu:checked ~ .ContenedorMenu-menu .cont-menu{
+    transform: translateX(0%);
+}
+nav{
+    transform: translateY(15%);
+}
+#btn-menu{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+/*Estilos carrusel bootstrap*/
+#carouselExampleCaptions{
+width: 1200px;
+height: auto;
+position: absolute;
+margin-left: 75px;
+margin-right: 50px;
+margin-top: 100px;
+z-index: -2;
+overflow: hidden;
+display: inline-block;
+border-radius: 20px;
+box-shadow: 0 0 20px #030f5e;
+
+}
+#carouselExampleCaptions img{
+border-radius: 20px;
+ object-fit: cover;
+ height: 500px;
+width: 700px;
+
+}
+
+/**Fin de los estilos del carrusel bootstrap*/
+/*Estoilos contenido nosotros*/
+
+.nosotros2{
+    color: #061a59;
+    font-size: 16px;
+    width: 90%;
+    height: 500px;
+    margin-left: 50px;
+    display: inline-block;
+    position: absolute;
+    z-index: -4;
+    margin-top: 650px;
+    
+
+}
+.nosotros2 h1{
+text-align: center;
+}
+.nosotros2 img{
+    float: right;
+    width: 600px;
+    height: auto; margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 35px;
+ 
+    
+}
+
+/*Fin del contenido nosotros*/
+
+
+/*Estilos Carusel
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    height: 450px;
+    margin: 100px auto;
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #030f5e;
+  }
+
+  .slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slide 20s infinite;
+  }
+
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+
+  @keyframes slide {
+    0%    { transform: translateX(0%); }
+    25%   { transform: translateX(0%); }
+    30%   { transform: translateX(-100%); }
+    50%   { transform: translateX(-100%); }
+    55%   { transform: translateX(-200%); }
+    75%   { transform: translateX(-200%); }
+    80%   { transform: translateX(-300%); }
+    100%  { transform: translateX(-300%); }
+  }
+  Fin de estilos de carusel*/
+
+/*Estilos Responsive*/
+  @media (max-width: 840px) {
+   
+    nav ul li a {
+        font-size: 14px;
+        margin-right: 2px;
+    }
+    nav p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+  }
+  .nosotros2{
+    color: #061a59;
+    font-size: 16px;
+    width: 90%;
+    height: 1000px;
+    margin-left: 50px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 650px;
+    
+
+}
+.nosotros2 h1{
+text-align: center;
+}
+.nosotros2 img{
+    float: right;
+    width: 600px;
+    height: auto; margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 35px;
+    z-index: -4;
+ 
+    
+}
+
+  
+@media (max-width: 640px) {
+    .ContenedorPrincipal p{
+        font-size: 12px;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .checkbtn{
+        display: block;
+        margin-right: 20px;
+        margin-top: 0px;
+    } 
+    
+    ul{ background: #061a88;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -110%;
+        text-align: center;
+        transition: all 0.5s;
+        
+    }
+     p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+     
+     nav ul li{
+display: block;
+
+margin: 50px 0;
+line-height: 30px;
+     }
+    nav ul li a{
+        font-size: 20px;
+    }
+     nav ul li a:hover{
+         background: none;
+         color: #fff;
+     }
+     
+
+     #check:checked ~ ul{
+        left:0;
+        
+     }
+     .logoIMG{
+    width: 70px;
+    height: 60px;
+    position:relative;
+    float: left;
+}
+
+.nosotros2{
+    color: #061a59;
+    font-size: 12px;
+    width: 90%;
+    height: 1000px;
+    margin-left: 15px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 650px;
+    text-align: justify;
+    z-index: -4;
+
+    
+
+}
+.nosotros2 h1{
+text-align: center;
+}
+.nosotros2 img{
+    float: right;
+    width: 600px;
+    height: auto; margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 35px;
+    z-index: -4;
+ 
+    
+}
+  } /*Fin de estilos responsive*/
+
+
+
+  
